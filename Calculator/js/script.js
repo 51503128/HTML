@@ -14,8 +14,17 @@ $(document).ready(function(){
       $('#cal').trigger('click');
       }
   });
+  $("#screen").keypress(function(event){
+            var keycode = event.keyCode ? event.keyCode : event.which
+
+            if (keycode >= 65 && keycode <= 90){
+                return false;
+            }
+            else if (keycode >= 97 && keycode <= 122) {
+                return false;
+            }
+        });
   showResult = function() {
-      console.log(eval($('#screen').val()));
       var res = eval($('#screen').val());
       $('#screen').val(res);
       //$('#gido').val(eval($('#gido').text()));//
