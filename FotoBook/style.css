@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0
+}
+.nav{
+    background-color: #365899;
+    height: 60px;
+    display: flex;
+}
+.con{
+    color: white;
+    font-size: 30px;
+    font-family:monospace;
+    letter-spacing: -2px;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-left: 150px;
+    cursor: pointer;
+}
+.email{
+    height: 20px;
+    position: absolute;
+    right: 350px;
+    top: 35px;
+    border: 0.2px
+}
+.pass{
+    height: 20px;
+    position: absolute;
+    right: 160px;
+    top: 35px;
+    border: 0.2px
+}
+.lab1{
+    font-family:inherit;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 422px
+    
+}
+.lab2{
+    font-family:inherit;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 271px;
+    
+}
+.log{
+    height: 22px;
+    width: 40px;
+    font-family:sans-serif;
+    font-size: 12px;
+    background-color: #365899;
+    color: white;
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    border: 1px solid #213252;
+    cursor: pointer;
+}
+.log:hover{
+    background-color: #283b62;
+}
+a{
+    color: #9cb4d8;
+    font-family: sans-serif;
+    position: absolute;
+    right: 225px;
+    top: 60px;
+    font-size: 12px;
+    
+}
+
+.search{
+  width: 400px;
+  height: 100%;
+}
+.search-id{
+  height: 50%;
+  margin-top: 10px;
+  width: 100%; 
+  margin-left: 20px;
+}
+
