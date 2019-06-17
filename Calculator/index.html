@@ -14,7 +14,7 @@
 <img src="images/logo.png" alt="cal-cul" height="110" width="150">
 <div class="calculator">
   <!--<textarea id="gido" rows="4" cols="40"></textarea> -->
-  <input type="text" id="gido">
+  <input type="text" id="screen">
   <div class="row">
     <button class="calc-btn">1</button>
     <button class="calc-btn">2</button>
@@ -25,13 +25,13 @@
     <button class="calc-btn">4</button>
     <button class="calc-btn">5</button>
     <button class="calc-btn">6</button>
-    <button class="calc-btn-special-1" onclick="levi()">CLEAR</button>
+    <button class="calc-btn-special-1" onclick="clr()">Clear</button>
   </div>
   <div class="row">
     <button class="calc-btn">7</button>
     <button class="calc-btn">8</button>
     <button class="calc-btn">9</button>
-    <button class="calc-btn-special-1" id="cal" onclick="displayButton()">=</button>
+    <button class="calc-btn-special-1" id="cal" onclick="showResult()">=</button>
   </div>
   <div class="row">
     <button class="calc-btn-special">+</button>
@@ -41,38 +41,5 @@
   </div>
 </div>
 </body>
-<script>
-$(document).ready(function(){
-
-    $('.calc-btn').on('click', function(e) {
-        let btn = e.target.innerHTML;
-        num(btn);
-    });
-    $('.calc-btn-special').on('click', function(e) {
-        let btn = e.target.innerHTML;
-        num(btn);
-    });
-
-  $(document).bind('keypress', function(e) {
-      if(e.keyCode==13){
-      $('#cal').trigger('click');
-      }
-  });
-  displayButton = function() {
-      console.log(eval($('#gido').val()));
-      var res = eval($('#gido').val());
-      $('#gido').val(res);
-      //$('#gido').val(eval($('#gido').text()));//
-
-  }
-  num = function(n){
-    value = $('#gido').val();
-    value += n;
-    $('#gido').val(value);
-  }
-  levi = function(){
-    $('#gido').val("");
-  }
-});
-
-</script>
+<script src="js/script.js"></script>
+</html>
